@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="submit-form" action="form.php" method="POST">
+      <label
+        ><span class="fa mr-2 fa-user" aria-hidden="true"></span> Name</label
+      >
+      <input
+        type="text"
+        name="name"
+        value="Name"
+        onfocus="this.value = '';"
+        onblur="if (this.value == '') {this.value = 'Name';}"
+        required="true"
+      />
+      <div class="clearfix"></div>
+      <label
+        ><span class="fa mr-2 fa-envelope-open" aria-hidden="true"></span
+        >Email</label
+      >
+      <input
+        type="email"
+        name="email"
+        value="Email"
+        onfocus="this.value = '';"
+        onblur="if (this.value == '') {this.value = 'Email';}"
+        required="true"
+      />
+      <div class="clearfix"></div>
+      <label
+        ><span class="fa mr-2 fa-phone" aria-hidden="true"></span>Phone</label
+      >
+      <input
+        type="text"
+        name="phone"
+        value="Phone"
+        onfocus="this.value = '';"
+        onblur="if (this.value == '') {this.value = 'Phone';}"
+        required="true"
+      />
+      <div class="clearfix"></div>
+      <label
+        ><span class="fa mr-2 fa-edit" aria-hidden="true"></span>Message</label
+      >
+      <textarea
+        name="msg"
+        onfocus="this.value = '';"
+        onblur="if (this.value == '') {this.value = 'Message...';}"
+        required="true"
+      >
+        Message...</textarea
+      >
+      <button type="submit" class="btn">Submit</button>
+    </form>
+
+
+    
+  </body>
+</html>
+
